@@ -1,10 +1,10 @@
 %define modname	Sub-Name
-%define modver	0.05
+%define modver 0.12
 
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	15
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -32,4 +32,3 @@ This module allows to (re)name a sub.
 %{perl_vendorarch}/Sub
 %{perl_vendorarch}/auto/Sub
 %{_mandir}/man3/*
-
