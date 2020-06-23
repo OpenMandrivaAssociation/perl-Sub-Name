@@ -1,10 +1,10 @@
 %define modname	Sub-Name
-%define modver	0.21
+%define modver	0.26
 
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	6
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Name
