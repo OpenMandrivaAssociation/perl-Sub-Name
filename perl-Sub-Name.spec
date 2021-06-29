@@ -4,7 +4,7 @@
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Name
@@ -16,7 +16,7 @@ BuildRequires:	perl(Test::More)
 This module allows to (re)name a sub.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
