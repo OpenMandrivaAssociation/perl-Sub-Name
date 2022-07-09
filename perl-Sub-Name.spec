@@ -1,5 +1,9 @@
 %define modname	Sub-Name
 %define modver	0.26
+%ifarch %{x86_64}
+# FIXME bug?
+%global _debugsource_template %{nil}
+%endif
 
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
