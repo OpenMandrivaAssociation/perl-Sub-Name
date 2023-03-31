@@ -8,7 +8,7 @@
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Name
