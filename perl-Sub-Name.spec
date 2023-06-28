@@ -1,18 +1,15 @@
+%undefine _debugsource_packages
+
 %define modname	Sub-Name
-%define modver	0.26
-%ifarch %{x86_64}
-# FIXME bug?
-%global _debugsource_template %{nil}
-%endif
 
 Summary:	Allows to (re)name a sub
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	4
+Version:	0.27
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Name
-Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 
@@ -20,7 +17,7 @@ BuildRequires:	perl(Test::More)
 This module allows to (re)name a sub.
 
 %prep
-%autosetup -p1 -n %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
